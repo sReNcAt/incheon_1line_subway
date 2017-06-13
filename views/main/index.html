@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style type="text/css">
+            body{
+                background-color:#FFF7FF;
+            }
+            .success{
+                color:#0000BB
+            }
+            .WARNING{
+                color:#00BB00
+            }
+            .INFO{
+                color:#BB0000
+            }
+            
+        </style>
+        <script>
+            function autorefresh(t){
+                setTimeout("location.reload(true);",t);
+            }
+        </script>
+        <title>Test Page</title>
+    </head> 
+    <body onload="javascript:autorefresh(20000);">
+        <div class="container-fluid">
+            <br>
+            <div id="box" class="show">
+                <div class="center-block">
+                    <table class="table table-bordered table-hover" >
+                        <tr align="center">
+                            <td class="active"></td>
+                            <td class="danger" colspan="2">상선</td>
+                            <td class="active"></td>
+                            <td class="danger" colspan="2">하선</td>
+                        </tr >
+                        <tr align="center">
+                            <td class="active"></td>
+                            <td class="active">1번 홈</td>
+                            <td class="active">2번 홈</td>
+                            <td class="active"></td>
+                            <td class="active">3번 홈</td>
+                            <td class="active">4번 홈</td>
+                        </tr >
+                        <tr align="center">
+                            <td class="active">부천</td>
+                            <td class="success">{{buchun1}}</td>
+                            <td class="warning">{{buchun2}}</td>
+                            <td class="active"></td>
+                            <td class="warning">{{buchun3}}</td>
+                            <td class="info">{{buchun4}}</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="active">중동</td>
+                            <td class="success">{{jungdong1}}</td>
+                            <td class="warning">{{jungdong2}}</td>
+                            <td class="active"></td>
+                            <td class="warning">{{jungdong3}}</td>
+                            <td class="info">{{jungdong4}}</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="active">송내</td>
+                            <td class="success">{{songnae1}}</td>
+                            <td class="warning">{{songnae2}}</td>
+                            <td class="active"></td>
+                            <td class="warning">{{songnae3}}</td>
+                            <td class="info">{{songnae4}}</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="active">부개</td>
+                            <td class="success">{{bugae1}}</td>
+                            <td class="warning">{{bugae2}}</td>
+                            <td class="active"></td>
+                            <td class="warning">{{bugae3}}</td>
+                            <td class="info">{{bugae4}}</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="active">부평</td>
+                            <td class="success">{{bupyung1}}</td>
+                            <td class="warning">{{bupyung2}}</td>
+                            <td class="active"></td>
+                            <td class="warning">{{bupyung3}}</td>
+                            <td class="info">{{bupyung4}}</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="active">백운</td>
+                            <td class="success">{{backun1}}</td>
+                            <td class="warning">{{backun2}}</td>
+                            <td class="active"></td>
+                            <td class="warning">{{backun3}}</td>
+                            <td class="info">{{backun4}}</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="active">동암</td>
+                            <td class="success">{{dongam1}}</td>
+                            <td class="warning">{{dongam2}}</td>
+                            <td class="active"></td>
+                            <td class="warning">{{dongam3}}</td>
+                            <td class="info">{{dongam4}}</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="active">간석</td>
+                            <td class="success">{{gansuk1}}</td>
+                            <td class="warning">{{gansuk2}}</td>
+                            <td class="active"></td>
+                            <td class="warning">{{gansuk3}}</td>
+                            <td class="info">{{gansuk4}}</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="danger">주안</td>
+                            <td class="danger">{{juan1}}</td>
+                            <td class="danger">{{juan2}}</td>
+                            <td class="active"></td>
+                            <td class="danger">{{juan3}}</td>
+                            <td class="danger">{{juan4}}</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="active">도화</td>
+                            <td class="success">{{dohwa1}}</td>
+                            <td class="warning">{{dohwa2}}</td>
+                            <td class="active"></td>
+                            <td class="warning">{{dohwa3}}</td>
+                            <td class="info">{{dohwa4}}</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="active">제물포</td>
+                            <td class="success">{{jemul1}}</td>
+                            <td class="warning">{{jemul2}}</td>
+                            <td class="active"></td>
+                            <td class="warning">{{jemul3}}</td>
+                            <td class="info">{{jemul4}}</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="active">도원</td>
+                            <td class="success">{{dowon1}}</td>
+                            <td class="warning">{{dowon2}}</td>
+                            <td class="active"></td>
+                            <td class="warning">{{dowon3}}</td>
+                            <td class="info">{{dowon4}}</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="active">동인천</td>
+                            <td class="success">{{dincheon1}}</td>
+                            <td class="warning">{{dincheon2}}</td>
+                            <td class="active"></td>
+                            <td class="warning">{{dincheon3}}</td>
+                            <td class="info">{{dincheon4}}</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="active">인천</td>
+                            <td class="success">{{incheon1}}</td>
+                            <td class="warning">{{incheon2}}</td>
+                            <td class="active"></td>
+                            <td class="warning">{{incheon3}}</td>
+                            <td class="info">{{incheon4}}</td>
+                        </tr>
+                        
+                        <tr align="center">
+                            <td class="active"></td>
+                            <td class="success">{{}}</td>
+                            <td class="warning">{{}}</td>
+                            <td class="active"></td>
+                            <td class="warning">{{}}</td>
+                            <td class="info">{{}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#bhc").click(function(){
+                    $("#hc").removeClass("hidden").addClass("show");
+                });
+                $("#backhc").click(function(){
+                    location.href = "./";
+                });
+            });
+        </script>
+    </body>
+</html>

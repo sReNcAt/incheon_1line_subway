@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body{
+                background-color:#FFF7FF;
+                font-size: 20px;
+            }
+        </style>
+        <script>
+            function autorefresh(t){
+                setTimeout("location.reload(true);",t);
+            }
+        </script>
+        <title>Test Page</title>
+    </head>
+    <body onload="javascript:autorefresh(10000000);">
+        <div class="container-fluid">
+            {% autoescape false %}{{ ajax }}{% endautoescape %}
+            {% autoescape false %}{{ ajax2 }}{% endautoescape %}
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#bhc").click(function(){
+                    $("#hc").removeClass("hidden").addClass("show");
+                });
+                $("#backhc").click(function(){
+                    location.href = "./";
+                });
+            });
+        </script>
+    </body>
+</html>
